@@ -14,7 +14,7 @@
         <a-asset-item id="crate-mtl" src="../assets/models/crate/crate.mtl"></a-asset-item>
         <a-asset-item id="crate-obj" src="../assets/models/crate/crate.obj"></a-asset-item>
         <a-asset-item id="brainstem" src="https://cdn.aframe.io/test-models/models/glTF-2.0/brainstem/BrainStem.gltf"></a-asset-item>
-        <a-asset-item id="apc" src="steampunkExplorer/steampunkExplorer.gltf"></a-asset-item>
+        <!-- <a-asset-item id="apc" src="steampunkExplorer/steampunkExplorer.gltf"></a-asset-item> -->
         <img id="sky" src="peach-gradient.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <audio id="river" src="https://ucarecdn.com/ed012d6a-686d-4ee8-959b-9ae480e2f76d/"></audio>
@@ -34,7 +34,7 @@
       <a-gltf-model src="#brainstem" position="-2 0 -1" scale="1.6 1.6 1.6"></a-gltf-model>
       
           <a-entity class="link"  sound="on: click; src: #click-sound">
-              <a-gltf-model src="#apc" position="-3 1 1" scale="0.3 0.3 0.3"></a-gltf-model>
+              <a-gltf-model src="#brainstem" position="-3 1 1" scale="0.3 0.3 0.3"></a-gltf-model>
           </a-entity>
 
           <a-entity sound="src: #river; on: click">
