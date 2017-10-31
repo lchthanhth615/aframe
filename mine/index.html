@@ -17,7 +17,9 @@
         <!-- <a-asset-item id="apc" src="steampunkExplorer/steampunkExplorer.gltf"></a-asset-item> -->
         <img id="sky" src="peach-gradient.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <audio id="river" src="https://ucarecdn.com/ed012d6a-686d-4ee8-959b-9ae480e2f76d/"></audio>
+        <audio id="river" crossorigin="anonymous" src="https://ucarecdn.com/ed012d6a-686d-4ee8-959b-9ae480e2f76d/cl.ogg"></audio>
+        <audio id="click2-sound" crossorigin="anonymous"  src="https://ucarecdn.com/e38441f8-b05c-4126-8cfe-8296e1217538/click.ogg"></audio>
+        
       </a-assets>
 
      
@@ -28,16 +30,15 @@
           event-set__1="_event: mouseenter; color: springgreen"
           event-set__2="_event: mouseleave; color: black"
           fuse="true"
-          raycaster="objects: .link"></a-cursor>
+          raycaster="objects: .link "></a-cursor>
       </a-entity>
 
-      <a-gltf-model src="#brainstem" position="-2 0 -1" scale="1.6 1.6 1.6"></a-gltf-model>
-      
+     
           <a-entity class="link"  sound="on: click; src: #click-sound">
-              <a-gltf-model src="#brainstem" position="-3 1 1" scale="0.3 0.3 0.3"></a-gltf-model>
+              <a-gltf-model src="#brainstem" position="-3 1 1" scale="1.3 1.3 1.3"></a-gltf-model>
           </a-entity>
 
-          <a-entity sound="src: #river; on: click">
+          <a-entity class="link"  sound="on: click; src: #river">
               <a-gltf-model src="#brainstem" position="-2 0 -1" scale="1.6 1.6 1.6"></a-gltf-model>
           </a-entity>
 
